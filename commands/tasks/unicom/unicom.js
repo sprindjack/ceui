@@ -396,6 +396,7 @@ var start = async (params) => {
   // 可使用 --exchangeDFlowCircle-intervalTime 1800 选项指定流量检查间隔时间，单位秒
   // 可使用 --exchangeDFlowCircle-minFlow 200 选项指定流量检查最小值
   // 可使用 --exchangeDFlowCircle-productId 21010621565413402 选项指定兑换流量包ID
+ /* 
   let { 'exchangeDFlowCircle-intervalTime': intervalTime = 1800 } = options
   if (typeof intervalTime !== 'number') {
     intervalTime = 1800
@@ -409,6 +410,7 @@ var start = async (params) => {
     startTime: 5 * 60,
     ignoreRelay: true
   })
+  */
 
   // 每日奖励信息结果推送
   if (!('asm_func' in process.env) || process.env.asm_func === 'false') {
