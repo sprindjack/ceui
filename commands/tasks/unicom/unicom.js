@@ -382,6 +382,7 @@ var start = async (params) => {
     ignoreRelay: true
   })
 
+  /*
   // 每日0点自动兑换流量
   await scheduler.regTask('exchangeDFlow', async (request) => {
     await require('./exchangeDFlow').doTask(request, options)
@@ -391,6 +392,7 @@ var start = async (params) => {
     startHours: 0,
     ignoreRelay: true
   })
+  */
 
   // 定时检测流量兑换
   // 可使用 --exchangeDFlowCircle-intervalTime 1800 选项指定流量检查间隔时间，单位秒
