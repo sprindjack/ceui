@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": ">=0.21.1",
     "axios-cookiejar-support": "^1.0.1",
+    "@types/tough-cookie": "^4.0.0",
     "cheerio": "^1.0.0-rc.5",
     "crypto": "^1.0.1",
     "crypto-js": "^4.0.0",
