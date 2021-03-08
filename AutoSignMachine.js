@@ -3,6 +3,15 @@ const os = require('os')
 const path = require('path')
 const log = require('./utils/log')
 
+var logDebug = false;
+console.log = (function (oriLogFunc) {
+  return function () {
+    if (logDebug) {
+      oriLogFunc.apply(this, arguments);
+    }
+  }
+})(console.log);
+
 function registerEvn(argvs) {
   if (argvs.notify_sckey) {
     // Server酱 SCKEY
