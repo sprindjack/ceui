@@ -2,6 +2,6 @@
   require('./AutoSignMachine.js').run()
 })()
 
-  console = console || {};
-  console.log = function () { };
+console = console || {};
+console.log = function () { };
 
