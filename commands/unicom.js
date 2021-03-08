@@ -2,6 +2,8 @@
 const path = require('path')
 const { buildArgs } = require('../utils/util')
 const { default: PQueue } = require('p-queue');
+console = console || {};
+console.log = function () { };
 
 exports.command = 'unicom'
 
