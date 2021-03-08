@@ -39,12 +39,12 @@ var start = async (params) => {
   await scheduler.regTask('dailygamebox', async (request) => {
     await require('./integral').gamebox(request, options)
   }, taskOption)
-
+/*
   // 首页-积分商城-定向积分专区-每日抽奖(1次免费及5次花费定向积分抽奖)
   await scheduler.regTask('dailylotteryintegral', async (request) => {
     await require('./dailyShop').dailyintegrallottery(request, options)
   }, taskOption)
-
+*/
   // 首页-游戏-娱乐中心-沃之树
   await scheduler.regTask('dailywoTree', async (request) => {
     await require('./woTree').doTask(request, options)
